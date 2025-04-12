@@ -4,34 +4,24 @@ This is a web application that allows users to upload black & white images and t
 
 🛠️ Steps to Run This Project (for GitHub ReadMe):
 
-Clone the Repo:
+1.Clone the Repo:
 
-bash
-Copy
-Edit
 git clone <your-repo-link>
 cd image-colorizer
-Install Dependencies:
 
-bash
-Copy
-Edit
+2.Install Dependencies:
+
 pip install -r requirements.txt
 
-Add the Model Files (manually):
+3.Add the Model Files (manually):
 
 Place the following in a model/ folder:
 
-colorization_deploy_v2.prototxt
+a.colorization_deploy_v2.prototxt
+b.pts_in_hull.npy
+c.colorization_release_v2.caffemodel
 
-pts_in_hull.npy
+4.Run the Server:
 
-colorization_release_v2.caffemodel
-
-Run the Server:
-
-bash
-Copy
-Edit
 python app.py
 Open the Web App: Visit http://localhost:5000 in your browser.
