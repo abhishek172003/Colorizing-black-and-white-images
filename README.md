@@ -6,6 +6,7 @@ This is a web application that allows users to upload black & white images and t
 
 1.Clone the Repo:
 git clone <your-repo-link>
+
 cd image-colorizer
 
 2.Install Dependencies:
