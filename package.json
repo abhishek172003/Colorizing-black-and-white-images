@@ -1,0 +1,15 @@
+{
+  "name": "image-colorizer",
+  "version": "1.0.0",
+  "description": "Image Colorization Web Application",
+  "main": "script.js",
+  "scripts": {
+    "start": "python app.py"
+  },
+  "dependencies": {
+    "numpy": "^1.24.3",
+    "opencv-python": "^4.7.0",
+    "flask": "^2.0.1",
+    "flask-cors": "^3.0.10"
+  }
+}

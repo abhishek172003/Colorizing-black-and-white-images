@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Colorizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 Image Colorizer</h1>
+            <p>Transform your black & white images into colorful memories</p>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <div class="upload-box" id="uploadBox">
+                    <input type="file" id="imageInput" accept="image/*" hidden>
+                    <div class="upload-content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        <p>Drop your image here or <span>browse</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-preview-section" id="previewSection" style="display: none;">
+                <div class="image-container">
+                    <h3>Original Image</h3>
+                    <div class="image-box">
+                        <img id="originalImage" alt="Original image">
+                    </div>
+                </div>
+                <div class="image-container">
+                    <h3>Colorized Image</h3>
+                    <div class="image-box">
+                        <img id="colorizedImage" alt="Colorized image">
+                        <div class="loading-spinner" id="loadingSpinner" style="display: none;">
+                            <div class="spinner"></div>
+                            <p>Processing...</p>
+                        </div>
+                    </div>
+                    <button id="downloadBtn" class="download-btn" style="display: none;">
+                        Download Colorized Image
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Made with ❤️ by Image Colorizer</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
